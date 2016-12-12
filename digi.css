@@ -1,39 +1,31 @@
 body{ 
 
-font-family: sans-serif;
-color: white;
-background-image: url("img/bg2.jpg");
-background-position: left top;
-background-attachment: fixed;
+    font-family: sans-serif;
+    color: white;
+    background-image: url("img/bg2.jpg");
+    background-position: left top;
+    background-attachment: fixed;
 }
 
 main{
-
-width: 700px;
+   
 }
 h1{
-font-size: 24px;
-
-
+    font-size: 24px;
 }
 h1.perso{
-
-font-size: 24px;
+    font-size: 24px;
 }
 h2{
-font-size: 18px;
-
+    font-size: 18px;
 }
 p{
-font-size: 12px;
-
-
-
+    font-size: 12px;
 }
 img.perso{
-float: right;
-height: 250px;
-width: 200px;
+    float: right;
+    height: 250px;
+    width: 200px;
 
 }
 ul {
@@ -63,7 +55,7 @@ img.article{
     width: 200px;
     height: 150px;
 }
-article{
+article.opdrachten{
     width: 200px;
     height: 200px;
     margin-left: 50px;
@@ -72,7 +64,7 @@ article{
 h2.article{
     text-align: center;
 }
-main{
+main.opdrachten{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -81,4 +73,18 @@ main{
     left: 10px;
     width: auto;
     height: auto;
+}
+img.hobby{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    transform: rotate(30deg);
+    left: 1000px;
+}
+#hobby2{
+    position: absolute;
+    left: 200px;
+    top: 350px;
+    width: 250px;
+    height: 150px;
 }
