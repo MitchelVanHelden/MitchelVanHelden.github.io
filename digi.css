@@ -114,3 +114,14 @@ a.cv:hover{
     color: blue;
     
 }
+@media screen and (max-width: 500px){
+    body{
+        
+    }
+p.naam{
+   
+
+}
+p{
+    font-size: 100px;
+}
