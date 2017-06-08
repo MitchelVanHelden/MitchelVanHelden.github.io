@@ -17,23 +17,82 @@
 
 <main>
 	<h1 class="perso">personalia</h1>
+	
+	
 
-		<l1 class="person">
-		<p>Naam en voorletters: Helden, Mitchel van </p>
-		<p>Adres: Da Costrastraat 32</p>
-		<p>Postcode: 2951 XB</p>
-		<p>woonplaats: Alblasserdam</p>
-		<p>telefoonnummer: 078-6990127</p>
-		<p>Gsm: 0620070114</p>
-		<p>E-mailadres: mitchelvh98@outlook.com</p>
-		<p>Geboortedatum: 11-1-1998</p>
-		<p>Geboorteplaats: Dordrecht</p>
-		<p>Nationaliteit: Nederlands</p>
-		<p>Rijbewijs: geen</p>
-		<p>Burgelijke staat: Ongehuwd</p>
-		<p>Geslacht: Man</p>
-		</l1>	
-	 <a class="cv" href="./cv/cv.pdf" download>Bekijk cv hier</a>
+	 <table>
+  <tr>
+  	<th>Naam en voorletters:</th> 
+       <td>Helden, Mitchel van</td>
+  </tr>
+  <tr>
+  	<th>adress:</th> 
+       <td>Da costastraat 32</td>
+  </tr>
+    <tr>
+  	<th>postcode:</th> 
+       <td>2951XB</td>
+  </tr>
+    <tr>
+  	<th>woonplaats:</th> 
+       <td>Alblasserdam</td>
+  </tr>
+    <tr>
+  	<th>Telefoonnummer:</th> 
+       <td>078-6990127</td>
+  </tr>
+    <tr>
+  	<th>gsm:</th> 
+       <td>0620070114</td>
+  </tr>
+    <tr>
+  	<th>E-mailadres:</th> 
+       <td>Mitchelvh98@outlook.com</td>
+  </tr>
+    <tr>
+  	<th>geboortedatum:</th> 
+       <td>11-1-1998</td>
+  </tr>
+    <tr>
+  	<th>Geboorteplaats:</th> 
+       <td>Dordrecht</td>
+  </tr>
+    <tr>
+  	<th>nationaliteit:</th> 
+       <td>Nederlands</td>
+  </tr>
+    <tr>
+  	<th>rijbewijs:</th> 
+       <td>geen</td>
+  </tr>
+    <tr>
+  	<th>Burgelijke staat:</th> 
+       <td>ongehuwd</td>
+  </tr>
+    <tr>
+  	<th>geslacht:</th> 
+       <td>man</td>
+  </tr>
+  </table>
+ <a class="cv" href="./cv/cv.pdf" download>Bekijk cv hier</a>
+
+ 	<div id="googleMap" style="width:300px; height:300px; position: absolute; left: 800px; top: 100px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.8655105,4.6686732),
+    zoom:15,
+
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7hEl1lIHAkBsk7gkwQFsuk-D6XYvYT0o&callback=myMap"></script>
+ 
+ 	</div>
+
 
 	<h1>Wie ben ik?</h1>
 		<p>Ik ben Mitchel van Helden en ik ben 19 jaar geboren op 11-01-1998.
@@ -53,6 +112,8 @@
 		<p>Talen : Nederlands (moedertaal) Engels (goede beheersing) </p>
 
 
+
+	<script src="js/cv.js" type="text/javascript" ></script>
 </main>
 </body>
 </html>
