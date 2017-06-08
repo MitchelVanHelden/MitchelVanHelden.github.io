@@ -76,25 +76,20 @@
   </table>
  <a class="cv" href="./cv/cv.pdf" download>Bekijk cv hier</a>
 
- 	<div id="googleMap" style="width:300px; height:300px; position: absolute; left: 800px; top: 100px;"></div>
+<div id="map" style="width:300px; height:300px; position: absolute; left: 800px; top: 100px;"></div>
 
 <script>
 function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(51.8655105,4.6686732),
-    zoom:16,
-   
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  
+  var myCenter = new google.maps.LatLng(51.8654154,4.6682731,21);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 16};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
 }
-
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7hEl1lIHAkBsk7gkwQFsuk-D6XYvYT0o&callback=myMap"></script>
- 
- 	</div>
-
 
 	<h1>Wie ben ik?</h1>
 		<p>Ik ben Mitchel van Helden en ik ben 19 jaar geboren op 11-01-1998.
